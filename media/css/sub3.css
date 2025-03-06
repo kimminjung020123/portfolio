@@ -1,0 +1,548 @@
+/* 와이드 pc  */
+
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+    position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -90px; bottom: 20%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}	
+	
+#content{ width:100%; margin:0; background:rgba(0,0,0,.9);position: relative;  }
+#content h2{position: absolute; top: -500px;
+width: 100%; text-align: center; font-size: 5em; font-family: "Cormorant Garamond", serif;
+background: linear-gradient(to bottom, #C8AA6E, #785A28);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;}
+
+  .main_section {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .top_image {
+    width: 100%; /* 가로 여백 없이 */
+    height: auto;
+  }
+
+  .main{padding: 0 80px;}
+  
+  .intro_text {
+    margin: 20px auto;
+    font-size: 3rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0 50px;
+  }
+  
+  .content_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+  }
+  
+  .left_content {
+    width: 55%;
+    text-align: left;
+  }
+  
+  .left_content h3 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    font-family: "Cormorant Garamond", serif;
+    background: linear-gradient(to bottom, #C8AA6E, #9A6C17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .left_content h4 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  
+  .left_content p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  
+  .right_content {
+    width: 40%;
+  }
+  
+  .image_right {
+    width: 100%;
+    height: auto;
+  }
+  
+  .lower_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px auto;
+    margin-top: 100px;
+  }
+  
+  .left_image {
+    width: 65%;
+    height: auto;
+  }
+  
+  .image_left {
+    width: 100%;
+    height: auto;
+  }
+  
+  .right_description {
+    width: 30%;
+    text-align: left;
+  }
+  
+  .right_description p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  
+.loot01{width: 100%; color: #fff; padding-bottom: 200px;}
+.loot_content01{ width: 100%; margin: 0 auto;}
+.con1 {margin-top:150px; text-align: right; display: flex; align-items: flex-end;
+      flex-direction: row-reverse; justify-content: space-between;}
+.con1 img{width: 50%; object-fit: cover; object-position: center;}
+
+/* .con1_text */
+
+.con1 .con1_text{width: 45%; display: flex; flex-direction: column;}
+.con1 .con1_text h4{font-size: 3.8rem;font-weight: 800;color: #C8AA6E;
+        position: relative; z-index: 10;}
+.con1 .con1_text h4::after{content: 'PILTOVER'; display: block; font-family: "Cormorant Garamond", serif;
+                font-size: 8.7rem; font-weight: 700; color: rgba(52, 42, 23, 0.7);
+                position: absolute; right: 0; bottom: -10px;z-index: -1;}
+.con1 .con1_text p{font-size: 1.5rem; margin-top: 10px;}
+
+/* .con1_text02 */
+
+.con1 .con1_text02{width: 45%; display: flex; flex-direction: column;}
+.con1 .con1_text02 h4{font-size: 3.8rem;font-weight: 800;color: #C8AA6E;
+        position: relative; z-index: 10;}
+.con1 .con1_text02 h4::after{content: 'DEMACIA'; display: block; font-family: "Cormorant Garamond", serif;
+                font-size: 8.7rem; font-weight: 700; color: rgba(52, 42, 23, 0.7);
+                position: absolute; right: 0; bottom: -10px;z-index: -1;}
+.con1 .con1_text02 p{font-size: 1.5rem; margin-top: 10px;}
+
+.con1 .con1_text02{width: 45%; display: flex; flex-direction: column;}
+.con1 .con1_text02 h4{font-size: 3.8rem;font-weight: 800;color: #C8AA6E;
+        position: relative; z-index: 10;}
+.con1 .con1_text02 h4::after{content: 'DEMACIA'; display: block; font-family: "Cormorant Garamond", serif;
+                font-size: 8.7rem; font-weight: 700; color: rgba(52, 42, 23, 0.7);
+                position: absolute; right: 0; bottom: -10px;z-index: -1;}
+.con1 .con1_text02 p{font-size: 1.5rem; margin-top: 10px;}
+
+/* .con1_text03 */
+
+.con1 .con1_text03{width: 45%; display: flex; flex-direction: column;}
+.con1 .con1_text03 h4{font-size: 3.8rem;font-weight: 800;color: #C8AA6E;
+        position: relative; z-index: 10;}
+.con1 .con1_text03 h4::after{content: 'ZAUN'; display: block; font-family: "Cormorant Garamond", serif;
+                font-size: 8.7rem; font-weight: 700; color: rgba(52, 42, 23, 0.7);
+                position: absolute; right: 0; bottom: -10px;z-index: -1;}
+.con1 .con1_text03 p{font-size: 1.5rem; margin-top: 10px;}
+
+/* .con1_text04 */
+
+.con1 .con1_text04{width: 45%; display: flex; flex-direction: column;}
+.con1 .con1_text04 h4{font-size: 3.8rem;font-weight: 800;color: #C8AA6E;
+        position: relative; z-index: 10;}
+.con1 .con1_text04 h4::after{content: 'SHADOW'; display: block; font-family: "Cormorant Garamond", serif;
+                font-size: 8.7rem; font-weight: 700; color: rgba(52, 42, 23, 0.7);
+                position: absolute; right: 0; bottom: -10px;z-index: -1;}
+.con1 .con1_text04 p{font-size: 1.5rem; margin-top: 10px;}
+
+
+.loot_content01 ul.con2 {width: 90%; display: flex; gap: 30px; position: relative; top: 150px;}
+.loot_content01 ul.con2 li{width: 30%; text-align: left;}
+.loot_content01 ul.con2 li img{width: 100%; object-fit: cover;
+  object-position: center;}
+.loot_content01 ul.con2 li dl{display: flex; flex-direction: column;}
+.loot_content01 ul.con2 li dl dt{font-size: 1.88rem; font-weight: 600; margin-top: 30px;}
+.loot_content01 ul.con2 dd{width: 70%; font-size: 1.13rem; margin-top: 20px;}
+
+
+
+
+
+
+
+
+
+
+/* 스와이퍼 부분 */
+
+
+  .swiper-box h3{font-size:4.8rem; text-align: center; margin: 50px 0 10px;
+    font-family: "Cormorant Garamond", serif;
+    background: linear-gradient(to bottom, #C8AA6E, #9A6C17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; margin-top: 100px;}
+  .swiper-box h4{font-size: 1.5rem; margin-top: 20px;}
+
+  #text{text-align: center; font-size: 1.2rem;}
+
+  .swiper-container {
+    width: 60%;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 330px;
+    height: 600px;
+  }
+  .swiper-wrapper {position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;}
+
+    .swiper-box dt{font-size: 1.3rem; margin-top: 10px; color: #C8AA6E; font-weight: bold;}
+    .swiper-box dd{font-size: 1.1rem; margin-top: 10px; color: #C8AA6E; font-weight: 500; margin-bottom: 150px;}
+  
+   #content .main_section:nth-of-type(4) .swiper-box {padding-bottom: 50px;}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+  .intro_text {
+    font-size: 2.8rem;
+}
+
+.left_content {
+  width: 55%;
+}
+
+.left_content h3 {
+  font-size: 4rem;
+  margin-bottom: -5px;
+}
+
+.left_content h4 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.left_content p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.right_description p {
+  font-size: 1rem;
+}
+
+.con1 .con1_text h4::after {
+  font-size: 5.3rem;
+  bottom: 24px;
+}
+
+.con1 .con1_text h4::after,.con1 .con1_text02 h4::after,.con1 .con1_text03 h4::after,.con1 .con1_text04 h4::after {
+  font-size: 5.3rem;
+  bottom: 24px;
+}
+
+.con1 .con1_text p,.con1 .con1_text02 p,.con1 .con1_text03 p,.con1 .con1_text04 p {
+  font-size: 1.2rem;
+}
+
+.loot_content01 ul.con2 li dl dt {
+  font-size: 1.4rem;
+  margin-top: 25px;
+}
+
+.loot_content01 ul.con2 dd {
+  width: 80%;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.swiper-container {
+  width: 80%;
+}
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+  .main {
+    padding: 0 50px;
+}
+
+  .intro_text {
+    font-size: 2.3rem;
+}
+
+.left_content h3 {
+  font-size: 3rem;
+}
+
+.left_content h4 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  
+}
+
+.left_content p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.lower_section {
+  margin-top: 60px;
+}
+
+.right_description p {
+  font-size: .87rem;
+}
+
+.con1 {
+  margin-top: 70px;
+}
+
+.con1 .con1_text h4,.con1 .con1_text02 h4,.con1 .con1_text03 h4,.con1 .con1_text04 h4 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.con1 .con1_text p,.con1 .con1_text02 p,.con1 .con1_text03 p,.con1 .con1_text04 p{
+  font-size: 1.17rem;
+}
+
+.con1 .con1_text h4::after,.con1 .con1_text02 h4::after,.con1 .con1_text03 h4::after,.con1 .con1_text04 h4::after {
+  font-size: 4.5rem;
+  font-weight: 700;
+  bottom: 20px;
+}
+
+.loot_content01 ul.con2 {
+  gap: 30px;
+  top: 80px;
+}
+
+.loot_content01 ul.con2 li dl dt {
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.loot_content01 ul.con2 dd {
+  width: 95%;
+  font-size: .9rem;
+  margin-top: 10px;
+}
+
+.swiper-box h3 {
+  font-size: 4rem;
+  margin: 20px 0 10px;
+}
+.swiper-box h4 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+
+  .main {
+    padding: 0 30px;
+}
+
+.image_right {
+  width: 130%;
+  height: auto;
+  margin-left: -90px;
+}
+
+.left_content {
+  width: 45%;
+}
+
+.left_content h3 {
+  font-size: 2.7rem;
+}
+
+.left_content h4 {
+  font-size: 1.3rem;
+}
+
+.left_content p {
+  font-size: .85rem;
+}
+
+.left_image {
+  width: 60%;
+}
+
+.right_description {
+  width: 37%;
+}
+
+.right_description p {
+  font-size: .73rem;
+}
+
+.con1 .con1_text {
+  width: 47%;
+}
+
+.con1 .con1_text h4,.con1 .con1_text02 h4,.con1 .con1_text03 h4,.con1 .con1_text04 h4  {
+  font-size: 2rem;
+}
+
+.con1 .con1_text p,.con1 .con1_text02 p,.con1 .con1_text03 p,.con1 .con1_text04 p {
+  font-size: 1rem;
+}
+
+.con1 .con1_text h4::after,.con1 .con1_text02 h4::after,.con1 .con1_text03 h4::after,.con1 .con1_text04 h4::after {
+  font-size: 3rem;
+  bottom: 13px;
+}
+
+.loot_content01 ul.con2 {
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.loot_content01 ul.con2 li {
+  display: flex; 
+  flex-direction: row; 
+  width: 100%; 
+  text-align: left;
+  gap: 20px; 
+}
+
+.loot_content01 ul.con2 li img {
+  width: 40%; 
+  height: auto;
+}
+
+.loot_content01 ul.con2 li dl {
+  width: 50%; 
+}
+
+.loot_content01 ul.con2 li dl dt {
+  font-size: 1.3rem; 
+  margin-top: 76px;
+}
+
+.loot_content01 ul.con2 li dl dd {
+  width: 100%;
+  font-size: .98rem;
+}
+
+.left_content h4 {
+  font-size: 1.14rem;
+  font-weight: 400;
+}
+.swiper-container {
+  width: 90%;
+}
+
+
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  .image_right {
+    margin-left: -70px;
+}
+.left_content h3 {
+  font-size: 2.2rem;
+}
+
+.left_content h4 {
+  font-size: 1rem;
+}
+
+.left_content p {
+  font-size: .7rem;
+}
+
+.left_image {
+  width: 55%;
+}
+
+.right_description {
+  width: 41%;
+}
+
+.right_description p {
+  font-size: .621rem;
+}
+
+.con1 {
+  margin-top: 60px;
+}
+
+.con1 .con1_text h4,.con1 .con1_text02 h4,.con1 .con1_text03 h4,.con1 .con1_text04 h4  {
+  font-size: 1.8rem;
+}
+
+.con1 .con1_text {
+  width: 46%;
+}
+
+.con1 .con1_text p,.con1 .con1_text02 p,.con1 .con1_text03 p,.con1 .con1_text04 p {
+  font-size: .8rem;
+}
+
+.loot_content01 ul.con2 li img {
+  width: 45%;
+  height: auto;
+}
+
+.loot_content01 ul.con2 li dl dt {
+  font-size: 1.2rem;
+}
+
+.loot_content01 ul.con2 li dl dd {
+  width: 85%;
+  font-size: .8rem;
+}
+
+.swiper-box h3 {
+  font-size: 3rem;
+  margin: 20px 0 10px;
+}
+
+.swiper-box h4 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+}

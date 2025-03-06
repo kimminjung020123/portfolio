@@ -1,0 +1,158 @@
+/* Reset CSS  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  }
+html{font-size: 18px;}
+body {font-family: "Noto Sans", sans-serif; color:#333; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a {color:#333;text-decoration:none; display: block; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #fff;}
+
+
+div,section,article{box-sizing: border-box;}
+
+/* 헤더 공통 영역 */
+#wrap{width:100%; overflow: hidden}
+#headerArea{position:fixed; z-index: 30; height: 100px;
+    background: rgba(0,0,0,.8); left:0; top: 0;
+    width: 100%; transition: all .5s;}	
+#headerArea	.headerInner{width: 90%; margin: 0 5%;
+     overflow: hidden}
+#headerArea h1{ float: left; margin-top: -1px}
+#headerArea h1 a {
+    width: 180px;
+    height: 101px;
+    background: url(../images/logo.png);
+    text-indent: -999px;
+    overflow: hidden;
+}	
+#headerArea #gnb{float: right;margin-top: 35px}
+#headerArea #gnb ul{overflow: hidden}
+#headerArea #gnb ul li{font-family: "Cormorant Garamond", serif; float: left; margin-right: 25px;}
+#headerArea #gnb ul li a{color: #fff;  font-size: 1.3rem;}
+#headerArea .menuOpen{ font-size:2em; color:#fff;
+    position:absolute; top:30px; right:30px; display: none;}
+#headerArea #gnb .close{ display:none}
+/* 푸터 공통 영역 */
+
+.topMove{
+    position: fixed; right: 20px;
+    bottom:50px; display: none;
+    z-index: 50;
+    }
+
+#footerArea {
+    text-align: center; 
+    padding: 40px 0;
+    background: #121212;
+    }
+
+#footerArea .footer_container img {width: 10%;}
+    
+#footerArea .footer_container p {
+        color: #c7c7c7;
+        font-weight: 300;
+        font-size: 0.9rem;
+        margin-top: 15px;
+    }
+    
+#footerArea .sns ul {
+        display: flex; 
+        justify-content: center;
+        margin-top: 10px; 
+        gap: 5px;
+    }
+    
+#footerArea .sns ul li {color: #ebebeb;}
+    
+#footerArea .sns ul li a {
+        width: 40px;
+        height: 25px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        transition: all 0.3s ease-out;
+    }
+    
+#footerArea .sns ul li a:hover {transform: scale(1.15);}
+    
+#footerArea .sns ul li:nth-child(1) a:hover i {
+    color: rgb(24, 119, 242);
+    }
+    
+#footerArea .sns ul li:nth-child(2) a:hover i {
+    color: #B1155A;
+    }
+    
+#footerArea .sns ul li:nth-child(3) a:hover i {
+    color: red;
+    }
+    
+#footerArea .sns ul li:nth-child(4) a:hover i {
+    color: rgb(88, 101, 242);
+    }
+    
+#footerArea .sns ul li a i {
+    font-size: 1.4rem;
+    }
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+	#headerArea h1{margin-top: 15px;}
+    #headerArea h1 a {
+        width: 120px;
+        background: url(../images/logo.png) no-repeat;
+        background-size: 100%;
+    }
+    #headerArea #gnb ul li{margin-right: 20px;}
+    #headerArea #gnb ul li a{font-size: 1.1rem;}
+
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #headerArea .headerInner {
+        width: 100%;margin: 0;}
+    #headerArea h1{margin-left: 30px;}
+    #headerArea .menuOpen{ display:block; }
+    #headerArea .box{width: 100%; height: 100vh; background: rgba(0,0,0,.6); z-index: 10;position: fixed;left:0; top:0; display: none;}
+    #headerArea #gnb{ width:80%; height:100vh; position:absolute; 
+        right:-100%; top:0; z-index: 100; margin-top: 0;
+            background:#000; opacity:0;}
+    #headerArea #gnb ul{float: none;width: auto; padding-top: 100px;}         
+    #headerArea #gnb ul li{ float:none; width:auto; text-align: center;line-height: 2.5rem;margin: 0;}
+    #headerArea #gnb ul li a{ font-size: 1.5em;padding: 10px 0;transition: all .5s;}
+    #headerArea #gnb ul li a:hover{background: #bf9a52; color: #fff;}
+    #headerArea #gnb .close{ display:block; position:absolute; right:30px; top:30px; color:#fff; font-size: 2em; }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+	
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}

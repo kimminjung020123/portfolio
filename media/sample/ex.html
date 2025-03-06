@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./swiper.min.css">
+    <style>
+        *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+
+        #box1{width: 100%; 
+        overflow: hidden;
+        background: url(./images/fitem01.jpg);
+        background-size: cover; background-position: center;
+        }
+
+        .swiper-container{
+            width: 1400px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 200px auto;
+            padding-bottom: 50px;
+           
+        }
+
+        .swiper-slide{
+       font-size: 100px;
+        background: pink;
+        box-sizing: border-box; border: 1px solid blue;}
+
+       .swiper-button-next, .swiper-button-prev {color: red;}
+
+       .swiper-button-next:after, .swiper-button-prev:after {font-size: 70px;}/*  바꾸고 싶은 거 검사 들어가서 찾아서 코드 복사해서 변경하기 */
+       
+
+
+
+    </style>
+</head>
+<body>
+    
+  <div id="box1">
+    <div class="swiper-container swiper1">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">Slide 1</li>
+        <li class="swiper-slide">Slide 2</li>
+        <li class="swiper-slide">Slide 3</li>
+        <li class="swiper-slide">Slide 4</li>
+        <li class="swiper-slide">Slide 5</li>
+        <li class="swiper-slide">Slide 6</li>
+        <li class="swiper-slide">Slide 7</li>
+        <li class="swiper-slide">Slide 8</li>
+        <li class="swiper-slide">Slide 9</li>
+        <li class="swiper-slide">Slide 10</li>
+      </ul>
+        <!-- Add Arrows 위치 중요-->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    
+         <!-- Add Pagination 아래에 슬라이드 점 점 점-->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+
+     
+  <div>
+    <div class="swiper-container swiper2">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">Slide 1</li>
+        <li class="swiper-slide">Slide 2</li>
+        <li class="swiper-slide">Slide 3</li>
+        <li class="swiper-slide">Slide 4</li>
+        <li class="swiper-slide">Slide 5</li>
+        <li class="swiper-slide">Slide 6</li>
+        <li class="swiper-slide">Slide 7</li>
+        <li class="swiper-slide">Slide 8</li>
+        <li class="swiper-slide">Slide 9</li>
+        <li class="swiper-slide">Slide 10</li>
+      </ul>
+        <!-- Add Arrows 위치 중요-->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    
+         <!-- Add Pagination 아래에 슬라이드 점 점 점-->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+
+
+
+
+    <script src="./swiper.min.js"></script>
+
+    <script>
+        var swiper1 = new Swiper('.swiper1',{
+            slidesPerView: 3,  //단수 (보이는 슬라이드 칸 수 ,'auto'(내가 원하는 단의 너비를 사용하려면 auto 사용하기 )
+            spaceBetween: 100,  //단사이 여백
+            //loop: true,  //무한 loop (1~10까지 가고 안 끊기고 무한히 돌아감)
+            //freeMode: true,  //내가 움직인 만큼 이동하기
+            //centeredSlides: true, //첫번째 슬리아드 위치가 센터로 오게 바꾸기(만약 단수가 2개이면 양쪽은 반반씩 보임)
+            //initialSlide: 0 //시작 슬라이드 변경하기
+            //effect: 'fade',   //페이드 효과 (단수가 1단이 된다)
+            //effect: 'flip',  //3D 회전효과(단수가 1단이 된다)
+            navigation: {    //이전/다음 버튼
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            pagination: {   //페이지 네이션
+            el: '.swiper-pagination',
+            dynamicBullets: true, //점 점 점 일직선 말고 변형 시키기
+            clickable: true, //점 점 점 누르면 슬라이드 이동하기
+            //type: 'fraction'   //  슬라이드 숫자로 표시하기 n/n
+            },
+            
+            autoplay: {  //자동으로 넘어가기
+            delay: 3000,
+            disableOnInteraction: false //슬라이드 한번 마우스로 눌러서 돌리면 더이상 안 돌아감
+            },
+           // scrollbar: {  //하단 스크롤바
+          //  el: '.swiper-scrollbar',
+           // hide: true
+           // },
+          
+
+        });
+
+        swiper1.on('transitionEnd', function() {
+            console.log(swiper1.realIndex);
+
+            var box1 = document.getElementById('box1');
+            var sind = swiper1.realIndex;
+            box1.style.background='url(./images/fitem0'+ (sind+1) +'.jpg)';
+            box1.style.backgroundSize='cover';
+            });
+
+
+        var swiper2 = new Swiper('.swiper2',{
+            slidesPerView: 2,  //단수 (보이는 슬라이드 칸 수 ,'auto'(내가 원하는 단의 너비를 사용하려면 auto 사용하기 )
+            spaceBetween: 100,  //단사이 여백
+            //loop: true,  //무한 loop (1~10까지 가고 안 끊기고 무한히 돌아감)
+            //freeMode: true,  //내가 움직인 만큼 이동하기
+            //centeredSlides: true, //첫번째 슬리아드 위치가 센터로 오게 바꾸기(만약 단수가 2개이면 양쪽은 반반씩 보임)
+            //initialSlide: 0 //시작 슬라이드 변경하기
+            //effect: 'fade',   //페이드 효과 (단수가 1단이 된다)
+            //effect: 'flip',  //3D 회전효과(단수가 1단이 된다)
+            navigation: {    //이전/다음 버튼
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            pagination: {   //페이지 네이션
+            el: '.swiper-pagination',
+            dynamicBullets: true, //점 점 점 일직선 말고 변형 시키기
+            clickable: true, //점 점 점 누르면 슬라이드 이동하기
+            //type: 'fraction'   //  슬라이드 숫자로 표시하기 n/n
+            },
+            scrollbar: {  //하단 스크롤바
+            el: '.swiper-scrollbar',
+            hide: true
+            },
+            autoplay: {  //자동으로 넘어가기
+            delay: 3000,
+            disableOnInteraction: true //슬라이드 한번 마우스로 눌러서 돌리면 더이상 안 돌아감
+            },
+
+
+        });
+
+
+
+
+   
+
+        
+      </script>
+</body>
+</html>
