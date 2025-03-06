@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* css reset */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+html{font-size: 16px;}
+body{font-family: "Noto Sans KR", sans-serif; color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #fff; text-decoration: none; display: block;}
+img{border: 0; vertical-align: top}
+.hidden{display: block; width: 1px; height: 1px;
+overflow: hidden; color: #fff; position: absolute;
+left: -1000px; top: 0;}
+
+.skipNav{position:fixed; width:100%; overflow:hidden; z-index:110; 
+font-family: 'Noto Sans KR', sans-serif;}
+.skipNav a{display:block; height:1px; margin-bottom:-1px;overflow:hidden; 
+  text-align:center; text-decoration:none; color:#fff; font-size:1.2rem; font-weight: 700;}
+.skipNav a:hover,.skipNav a:focus,#skipNav a:active{
+  height:auto;padding:15px 0; background: #000;}
+
+
+
+
+
+
+
+.wrap{width: 100%; overflow: hidden;}
+
+ /* header 공통영역 */ 
+  #headerArea{width: 100%; height: 180px; transition: background-color .5s; position: fixed; left: 0; top: 0; z-index: 100;}
+  #headerArea .headerInner{width: 1400px; margin: 0 auto; margin-top: 25px}
+  #headerArea .headerInner .header_top{overflow: hidden;}
+
+
+
+  #headerArea h1{float: left; margin-left: 50%; transform: translateX(-50%);}
+  #headerArea .ch h1{float: left; margin-left: 0; transform: translateX(0);}
+  #headerArea h1 a{width: 318px; height: 52px;background: url(../images/logo1.png);  text-indent: -999px; overflow: hidden;}
+  #headerArea .ch h1 a{background: url(../images/logo1.png) no-repeat; width: 318px; height: 52px;}
+
+
+
+  #headerArea .headerInner .top_menu{width: 150px; float: right; 
+}
+  #headerArea .headerInner .top_menu ul{
+    display: flex; width: 130px;
+    justify-content: space-between; 
+    }
+  #headerArea .headerInner .top_menu{
+        margin: 25px 60px 0 0;
+    }
+  #headerArea .headerInner .top_menu ul li{
+   text-align: right; 
+  }
+  #headerArea .headerInner .top_menu ul li:hover a{color: #C8102E; transition: all .2s ease-out;}
+  #headerArea .headerInner .top_menu a{color: #fff;}
+
+ /* gnb */
+  #headerArea #gnb .dropdownmenu{display: flex;}
+  #headerArea #gnb .dropdownmenu .menu{width: 16.66%; text-align: center; position: relative;}
+  #headerArea #gnb .ch{width: 800px; text-align: left; position: relative; top: -60px; left: 380px;}
+
+  #headerArea #gnb .dropdownmenu .menu::after{content: ''; display: block; width: 8px; height: 8px;
+       border-radius: 50%; background: #C8102E; position: absolute; left: 50%; margin-left: -4px;
+      bottom: 20px; opacity: 0; transition: all .3s ease-out; }
+  #headerArea #gnb .dropdownmenu .menu:hover::after{content: '';bottom: 5px; opacity: 1; }    
+
+  #headerArea #gnb .dropdownmenu .menu h3{position: relative; height: 85px; }
+  #headerArea #gnb .dropdownmenu .menu .depth1{ text-align: center; transition: all .2s ease-out;}
+  #headerArea #gnb ul li h3 a{color: #fff; font-family: "Roboto", sans-serif;  font-size: 1.22rem; padding: 30px 0;text-align: center;}
+
+
+  /* 2depth */
+  #headerArea #gnb ul .menu ul{position: absolute; left:0; top: 85px; width: 100%;height: 200px;display: none;  }
+  
+  #headerArea #gnb ul .menu ul li{text-align: center;}
+  #headerArea #gnb ul li a{ font-family: "Noto Sans KR", sans-serif; font-size: 1rem;
+      color: #fff; transition: all .2s ease-out; padding: 10px 0;}
+  
+
+
+
+
+/* 푸터 공통 css */
+
+#footerArea{background: #111; color: #eee; }
+#footerArea a{color: #eee;}
+#footerArea .footer_inner{width: 1400px;margin: 0 auto;
+           display: flex; justify-content: space-between;}
+#footerArea img{margin: 50px 0 30px;}
+#footerArea address{font-style: normal; line-height: 1.5rem;
+   margin-bottom: 10px;}
+#footerArea .copy{margin-bottom: 20px;}
+
+
+#footerArea .bottom_menu{display: flex; gap: 30px; margin-bottom: 50px;}
+#footerArea .family{width: 200px; border: 1px ; background-color: #C8102E;
+   text-align: center; margin: 90px 0 30px; position:relative; }
+
+
+
+.family .arrow{ width: 200px; display:block; font-size:1em; padding: 10px 0;
+  text-align: center; transition: all 1s;}
+
+.family .arrow i{font-size:.9em ; color: #f8f8f8; margin-left: 8px;} 
+.family .aList{ position:absolute; top:-190px; width:200px; background: #C8102E;
+display:none; padding: 10px 0;}
+.family .aList li{ line-height:1.5em; border-bottom:2px solid #f8f8f8;}
+.family .aList li a{display:block; text-align: center; padding: 5px 0; transition: all 1s;}
+
+
+#footerArea .sns{display: flex; gap: 30px;}
+#footerArea .sns span{font-size: 2rem; }
+#footerArea .sns li:hover span{color: #C8102E;}
+
+#footerArea .top_move {width: 80px ; height: 80px;
+  border-radius: 50%;
+  background-color: #C8102E; box-shadow: 0 0 15px 1px rgba(0,0,0,.3);
+  position: fixed; left: 50%; margin-left: 750px;
+  bottom: 200px; z-index: 50; display: none;
+  }
+
+  #footerArea .top_move span{ display: block; text-align: center;
+    font-size: 1.2rem; font-weight: bold; margin-top: 25px;
+  }

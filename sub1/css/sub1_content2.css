@@ -1,0 +1,372 @@
+@charset "UTF-8";
+#content {
+    background: #fff url('../images/content2/road01.png') no-repeat center;
+    margin: 0 auto;
+    height: 6900px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-position: center 1500px;  /* 이미지를 중앙에 배치하고 수직으로 1500px 아래로 이동 */
+  
+    z-index: 1; 
+}
+#content .content_area h3{
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    color: aliceblue;
+}
+#content .content_area h3::before{
+    content: '';
+    display: block;
+    background: linear-gradient(45deg, #C8102E, #FF5628);
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, .2); 
+    border-radius: 0 50px 0 50px;
+    width: 500px; height: 60px;
+    position: absolute;
+    top: -10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: -10;
+}
+#content .content_area>p{
+    font-size: 1.33em;
+    text-align: center;
+   margin-top: 50px;
+
+}
+
+#content .content_area .tab_menu{
+    width: 1400px;
+    height: 200px;  
+    position: relative;
+    top: 100px;
+    margin-left: 250px;
+}
+
+#content .content_area .tab_menu ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#content .content_area .tab_menu li{
+    border-right: 1px solid #C8102E;
+    color: black;
+}
+#content .content_area .tab_menu li:last-child{
+    border-right: none;
+}
+#content .content_area .tab_menu li a{
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 15px 100px;
+    position: relative;
+    color: #C8102E;
+}
+#content .content_area .tab_menu li::after{
+    display: block;
+    content: '';
+    height: 4px;
+    background-color: #C8102E;
+    width: 0;
+    transition: all .2s ease-out;
+}
+#content .content_area .tab_menu li:hover::after{
+    width: 255px;
+}
+
+#content .content_area .history_1960{
+    width: 2000px;
+    height: 2000px;
+    position: relative;
+    left: 50%;
+    top: 300px;
+    margin-left: -1100px;
+    z-index: -10;
+}
+#content .content_area .history_1960 h4{
+    font-size: 4em;
+    text-align: center;
+    position: absolute;
+    width: 2000px;
+    height: 250px;
+    left: 100px;
+    top: -160px;
+    color: #fff;
+    background: url(../images/content2/exex.png) fixed no-repeat;
+    background-position: center;
+    padding-top: 60px;
+}
+#content .content_area .history_1960 ol li{
+    position: absolute; 
+}
+#content .content_area .history_1960 ol li:nth-of-type(1){
+    left: 550px; top: 290px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(2){
+    left: 835px; top: 290px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(3){
+    right: 525px; top: 290px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(4){
+    right: 450px; top: 490px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(5){
+    right: 580px; top: 590px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(6){
+    right: 910px; top: 590px; 
+}
+#content .content_area .history_1960 ol li:nth-of-type(7){
+    left: 530px; top: 590px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(8){
+    left: 620px; top: 830px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(9){
+    left: 820px; top: 900px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(10){
+    right: 730px; top: 900px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(11){
+    right: 480px; top: 900px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(12){
+    right: 420px; top: 1110px;    
+}
+#content .content_area .history_1960 ol li:nth-of-type(13){
+    right: 605px; top: 1205px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(14){
+    right: 870px; top: 1205px;
+}
+#content .content_area .history_1960 ol li:nth-of-type(15){
+    left: 570px; top: 1205px;
+}
+
+
+
+#content .content_area .history_1990{
+    width: 2000px;
+   /* background: url(../images/content1/play1.png) 0 0 no-repeat;*/
+    height: 2000px;
+    position: relative;
+    left: 50%;
+    top: -175px;
+    /* transform: translateX(-50%); */
+    margin-left: -700px;
+    z-index: -10;
+}
+#content .content_area .history_1990 h4{
+    font-size: 4em;
+    text-align: center;
+    position: absolute;
+    width: 2000px;
+    height: 250px;
+    left: -300px;
+    top: -50px;
+    color: #fff;
+    background: url(../images/content2/exex.png) fixed no-repeat;
+    background-position: center;
+    padding-top: 60px;
+}
+#content .content_area .history_1990 ol li{
+    position: absolute;
+}
+#content .content_area .history_1990 ol li:nth-of-type(1){
+    right: 875px ;top: 300px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(2){
+    left: 610px; top: 300px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(3){
+    left: 170px; top: 300px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(4){
+    left: 230px; top: 510px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(5){
+    left: 300px; top: 610px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(6){
+    left: 635px;  top: 610px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(7){
+    right: 820px;  top: 610px; 
+}
+#content .content_area .history_1990 ol li:nth-of-type(8){
+    right: 870px; top: 820px; 
+}
+#content .content_area .history_1990 ol li:nth-of-type(9){
+    right: 940px;bottom: 1010px; 
+}
+#content .content_area .history_1990 ol li:nth-of-type(10){
+    right: 1290px; bottom: 1010px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(11){
+    left: 135px; bottom: 1010px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(12){
+    left: 240px; bottom: 805px; 
+}
+#content .content_area .history_1990 ol li:nth-of-type(13){
+    left: 300px;  bottom: 710px; 
+}
+#content .content_area .history_1990 ol li:nth-of-type(14){
+    right: 1190px; bottom: 710px;
+}
+#content .content_area .history_1990 ol li:nth-of-type(15){
+     right: 810px; bottom: 710px;}
+
+
+#content .content_area .history_2000{
+    width: 2000px;
+   /* background: url(../images/content1/play1.png) 0 0 no-repeat;*/
+    height: 2600px;
+    position: relative;
+    left: 50%;
+    top: -500px;
+    /* transform: translateX(-50%); */
+    margin-left: -700px;
+    z-index: -10;
+}
+#content .content_area .history_2000 h4{
+    font-size: 4em;
+    text-align: center;
+    position: absolute;
+    width: 2000px;
+    height: 250px;
+    left: -300px;
+    top: -175px;
+    color: #fff;
+    background: url(../images/content2/exex.png) fixed no-repeat;
+    background-position: center;
+    padding-top: 60px;
+}
+#content .content_area .history_2000 ol li{
+    position: absolute;
+}
+#content .content_area .history_2000 ol li:nth-of-type(1){
+    left: 260px;   top: 170px; 
+}
+#content .content_area .history_2000 ol li:nth-of-type(2){
+    left: 590px;  top: 170px; 
+}
+#content .content_area .history_2000 ol li:nth-of-type(3){
+    right: 790px;  top: 170px;  
+}
+#content .content_area .history_2000 ol li:nth-of-type(4){
+    right: 870px; top: 380px; 
+}
+#content .content_area .history_2000 ol li:nth-of-type(5){
+    right: 965px;  top: 450px;
+}
+#content .content_area .history_2000 ol li:nth-of-type(6){
+    left: 530px; top: 450px;
+}
+#content .content_area .history_2000 ol li:nth-of-type(7){
+   left: 160px; top: 450px;
+}
+#content .content_area .history_2000 ol li:nth-of-type(8){
+   left: 230px; top: 670px;  
+}
+#content .content_area .history_2000 ol li:nth-of-type(9){
+    left: 250px;  top: 770px; 
+}
+#content .content_area .history_2000 ol li:nth-of-type(10){
+    left: 610px;   top: 770px;  
+}
+#content .content_area .history_2000 ol li:nth-of-type(11){
+    left: 970px; top: 770px; 
+}
+
+
+
+
+#content .content_area .history_2010{
+    width: 2000px;
+   /* background: url(../images/content1/play1.png) 0 0 no-repeat;*/
+    height: 1800px;
+    position: relative;
+    left: 50%;
+    top: -950px;
+    /* transform: translateX(-50%); */
+    margin-left: -710px;
+    z-index: -10;
+}
+#content .content_area .history_2010 h4{
+    font-size: 4em;
+    text-align: center;
+    position: absolute;
+    width: 2000px;
+    height: 250px;
+    left: -290px;
+    top: -1100px;
+    color: #fff;
+    background: url(../images/content2/exex.png) fixed no-repeat;
+    background-position: center;
+    padding-top: 60px;
+}
+#content .content_area .history_2010 ol li{
+    position: absolute;
+}
+#content .content_area .history_2010 ol li:nth-of-type(1){
+    left: 295px; bottom: 2480px;  
+}
+#content .content_area .history_2010 ol li:nth-of-type(2){
+    left: 620px; bottom: 2480px;
+}
+#content .content_area .history_2010 ol li:nth-of-type(3){
+    left: 950px; bottom: 2480px; 
+}
+#content .content_area .history_2010 ol li:nth-of-type(4){
+    right: 850px; bottom: 2280px; 
+}
+#content .content_area .history_2010 ol li:nth-of-type(5){
+    right: 930px; bottom: 2180px; 
+}
+#content .content_area .history_2010 ol li:nth-of-type(6){
+    left: 500px; bottom: 2180px;
+}
+#content .content_area .history_2010 ol li:nth-of-type(7){
+    left: 160px; bottom:  2200px; 
+}
+#content .content_area .history_2010 ol li:nth-of-type(8){
+    left: 270px; bottom: 1975px; 
+}
+#content .content_area .history_2010 ol li:nth-of-type(9){
+    left: 310px; bottom: 1880px;
+}
+#content .content_area .history_2010 ol li:nth-of-type(10){
+    left: 700px; bottom: 1880px;
+}
+#content .content_area .history_2010 ol li:nth-of-type(11){
+    right: 680px; bottom: 1880px; 
+}
+
+
+
+#content .content_area .history ol li{
+    text-align: center;
+}
+#content .content_area .history ol li span{
+    font-size: 1.33em;
+    font-family: 'montserrat';
+    font-weight: 500;
+    /* display: block; */
+}
+
+#content .content_area .history ol li p{
+    font-size: .89em;
+}
+
+/* 스크롤 스티키 */
+#content .content_area .tab_menu .navOn{position: fixed; width: 100%;
+    z-index:60; left:0; top: 0; background-color: #fff; transition: all .2s ease-out;}
+
+#content .content_area .tab_menu .subNav li a.spy{
+           background: #C8102E; color: #fff
+        }

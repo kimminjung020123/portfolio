@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+
+/* 비주얼 공통 */
+.visual{width: 2000px; height: 350px;
+    background:url(../images/v1.png);
+    position: relative; top: 0; left: 50%; transform: translateX(-50%); }
+
+    .visual strong{font-size: 30px; color: #fff; 
+        position: absolute; width: 100%; text-align: center;
+    top: 200px; left: 0;}
+
+/* 서브 네비 공통 */
+
+.sub_nav{width: 100%; border-bottom: 1px solid #ccc;}
+.sub_nav ul{width: 1400px; margin: 0 auto;display: flex;}
+.sub_nav ul li{width: 35%; text-align: center; box-sizing: border-box; }
+.sub_nav ul li a{font-size: 1.2rem; font-weight: bold;
+padding: 20px 0; color: #333; transition: all .5s ease-out;}
+.sub_nav ul li a:hover{color: #fff;background: #C8102E;}
+.sub_nav ul li a.current{color: #fff;
+background: #C8102E;}
+
+
+/* title_area 공통 */
+
+#content{width: 100%;}
+#content .title_area{width: 1400px; margin: 0 auto;
+position: relative;  overflow: hidden;}
+
+#content .title_area .line_map{position: absolute;
+right: 15px; top: 20px; color: #666;}
+#content .title_area h2{font-size: 60px;
+font-weight: bold; text-align: center;
+margin: 150px 0 30px;}
+#content .title_area p{font-size: 2.2rem;
+text-align: center; margin-bottom: 100px; color:#C8102E; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+

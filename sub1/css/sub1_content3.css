@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.content_area{width: 100%; width: 1400px; height: 4300px; margin: 0 auto;
+    position: relative;  overflow: hidden;}
+.content_area .start_area .start{display: block; font-size: 12em; text-align: center; color: #F4F4F4; font-weight: 500;}
+.content_area .content_wrapper .line{position: absolute;  justify-content: center; margin-top: 30px;} 
+.content_area .content_wrapper .text_content .track{margin-left: 12px; margin-top: 160px;}
+.content_area .content_wrapper .text_content h3{text-align: center; font-size: 1.8em; margin-top: 50px;}
+.content_area .content_wrapper .text_content .highlight{color: #C8102E;}
+.content_area .content_wrapper .text_content p{font-size: 1.2rem; text-align: center; margin-top: 50px;}
+
+.course {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .course div {
+    width: 359px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .course div img {
+    width: 315px;
+    height: 215px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+  
+  .course div h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+ .course div p {
+  font-size: 14px;
+  line-height: 1.6; /* 줄 간격 */
+  height: calc(1.6em * 3); /* 한 줄 높이 × 3줄 (3줄까지만 보이게) */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis; /* 말줄임표 추가 */
+  white-space: nowrap; /* 한 줄로 처리 */
+  display: block; /* 기본 블록 요소 */
+}
+  .course div:hover {
+    width: 400px;
+    height: 479px;
+    background-color: #D71819;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course div:hover p {
+    white-space: normal; /* 말줄임 해제 */
+    height: auto; /* 텍스트 전부 표시 */
+  }
+  

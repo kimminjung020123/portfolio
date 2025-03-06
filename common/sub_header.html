@@ -1,0 +1,81 @@
+<header id="headerArea">
+    <div class="headerInner"> 
+
+     <div class="header_top">
+         <h1>
+             <a href="../index.html">인제 스피디움</a>
+         </h1>
+         
+         <div class="top_menu">
+             <ul>
+                <? if(!$userid){ //로그인이 안된 상태냐? ?> 
+
+                    <li><a href="../login/login_form.php">로그인</a></li>
+                    <li><a href="../member/member_check.html">회원가입</a></li>
+
+                <? } else { //로그인이 된 상태냐? ?>
+
+                    <li><a href="../login/logout.php">로그아웃</a></li>
+                    <li><a href="../member/member_form_modify.php">정보수정</a></li>
+
+                <? } ?>
+             </ul>
+         </div>
+     </div>
+
+     <nav id="gnb">
+         <ul class="dropdownmenu">
+             <li class="m1 menu">
+               <h3><a class="depth1" href="../sub1/sub1_1.html">스피디움 소개</a></h3>
+               <ul>
+                   <li><a href="../sub1/sub1_1.html">회사소개</a></li>
+                   <li><a href="../sub1/sub1_2.html">연혁</a></li>
+                   <li><a href="../sub1/sub1_3.html">코스맵</a></li>
+                   <li><a href="../sub1/sub1_4.html">오시는길</a></li>
+               </ul>
+           </li>
+           <li class="m2 menu">
+               <h3><a class="depth1" href="../sub2/sub2_1.html">서킷 소개</a></h3>
+               <ul>
+                   <li><a href="../sub2/sub2_1.html">레이싱 트랙</a></li>
+                   <li><a href="../sub2/sub2_2.html">일정</a></li>
+                   <li><a href="../sub2/sub2_3.html">시설 안내</a></li>
+               </ul>
+           </li>
+           <li class="m3 menu">
+               <h3><a class="depth1" href="../sub3/sub3_1.html">이용 안내</a></h3>
+               <ul>
+                   <li><a href="../sub3/sub3_1.html">이용 요금</a></li>
+                   <li><a href="../sub3/sub3_2.html">이용 규정</a></li>
+                   <li><a href="../sub3/sub3_3.html">스포츠 주행</a></li>
+               </ul>
+           </li>
+           <li class="m4 menu">
+               <h3><a class="depth1" href="../sub4/sub4_1.html">부대 시설</a></h3>
+               <ul>
+                   <li><a href="../sub4/sub4_1.html">공간 및 전시</a></li>
+                   <li><a href="../sub4/sub4_2.html">응급 센터</a></li>
+               </ul>
+           </li>
+           <li class="m5 menu">
+               <h3><a class="depth1" href="../sub5/sub5_1.html">서킷 체험</a></h3>
+               <ul>
+                   <li><a href="../sub5/sub5_1.html">서킷 택시</a></li>
+                   <li><a href="../sub5/sub5_2.html">서킷 사파리</a></li>
+                   <li><a href="../sub5/sub5_3.html">카트 센터</a></li>
+               </ul>
+           </li>
+           <li class="m6 menu">
+               <h3><a class="depth1" href="../notice/list.php">커뮤니티</a></h3>
+               <ul>
+                   <li><a href="../notice/list.php">공지사항</a></li>
+                   <li><a href="../sub6/sub6_2.html">FAQ</a></li>
+                   <li><a href="../greet/list.php">채용공고</a></li>
+               </ul>
+              </li>
+         </ul>
+     </nav>
+     <!-- nav e --> 
+   </div> 
+   <!-- headerInner e -->   
+ </header>
